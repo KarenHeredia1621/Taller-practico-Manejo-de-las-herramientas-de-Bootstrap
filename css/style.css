@@ -1,0 +1,32 @@
+/*Configuración básica de un archivo css
+1. Tipografías  2. Estilos generales 3. íconos  4. Variables 5. Desktop 6. Tablet 7. Smartphone*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Cutive+Mono&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libertinus+Serif+Display&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&family=Libertinus+Serif+Display&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css');
+
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Cutive Mono", monospace;
+}
+
+p,a,button,li, label, input, select,textarea,span{
+    font-family: "Cormorant SC", serif;
+}
+
+:root{
+    --primary-color: #e58411;
+    --gray-color: #f7f7f7;
+    --white-color: #fff;
+    --dark-color: #1e1e1e;
+    --fs-title1: 80px;
+    --fs-title2: 42px;
+    --fs-title3: 24px;
+    --fs-title4: 18px;
+    --fs-text: 16px;
+}
+
+@media screen and (min-width:768px) and (max-width: 1080px) {
+}
+@media screen and (min-width:320px) and (max-width: 767px) {
+}
