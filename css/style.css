@@ -389,6 +389,58 @@ header .bag-button .counter-products {
     color: var(--primary-color);
 }
 
+#materials {
+    width: 100%;
+    position: relative;
+    padding: 140px 0;
+
+}
+
+#materials .cont-info {
+    padding: 0 0 20px 60px;
+    margin-top: 50px;
+}
+
+#materials .cont-info h3 {
+    color: var(--primary-color);
+    font-size: var(--fs-title4);
+    text-transform: uppercase;
+
+}
+
+#materials .cont-info h2 {
+    color: #1e1e1e;
+    font-size: var(--fs-title2);
+    font-weight: 700;
+    width: 480px;
+    margin-top: 20px;
+
+}
+
+#materials .cont-info p{
+    color: var(--dark-color);
+    font-size: var(--fs-text);
+    width: 520px;
+    margin-top: 20px;
+
+}
+
+#materials .cont-info a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+#materials .cont-info i {
+    margin-left: 4px;
+    transition: .5s;
+}
+
+#materials .cont-info a:hover i {
+    margin-left: 15px;
+}
+
+
+
 /* 5. TABLET  RESPONSIVE*/
 @media screen and (min-width:768px) and (max-width: 100px) {}
 
