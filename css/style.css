@@ -28,7 +28,10 @@ p,a,button,li,label,input,select,textarea,span {
     --fs-title3: 22px;
     --fs-title4: 18px;
     --fs-text: 16px;
+}
 
+body{
+overflow-x: hidden;
 }
 
 /* 4. DESKTOP  RESPONSIVE */
@@ -368,6 +371,7 @@ header .bag-button .counter-products {
   #experiences .cont-info h3{
     color: var(--primary-color);
     font-size: 18px;
+    letter-spacing: 2px;
   }
 
   #experiences .cont-info h2{
@@ -389,35 +393,48 @@ header .bag-button .counter-products {
     color: var(--primary-color);
 }
 
+#experiences .cont-info a:hover i {
+    margin-left: 15px;
+}
+
+/* SECCION  MATERIALS */
+
+
 #materials {
+
     width: 100%;
     position: relative;
-    padding: 140px 0;
+    padding: 50px 0;
 
 }
 
 #materials .cont-info {
-    padding: 0 0 20px 60px;
-    margin-top: 50px;
+    padding: 0px 60px 0 60px;
 }
 
 #materials .cont-info h3 {
+
     color: var(--primary-color);
     font-size: var(--fs-title4);
     text-transform: uppercase;
+    padding-top: 100px;
+    letter-spacing: 2px;
 
 }
 
 #materials .cont-info h2 {
+
     color: #1e1e1e;
     font-size: var(--fs-title2);
     font-weight: 700;
     width: 480px;
     margin-top: 20px;
+    padding-right: 50px;
 
 }
 
-#materials .cont-info p{
+#materials .cont-info p {
+
     color: var(--dark-color);
     font-size: var(--fs-text);
     width: 520px;
@@ -430,15 +447,146 @@ header .bag-button .counter-products {
     color: var(--primary-color);
 }
 
+
 #materials .cont-info i {
+
     margin-left: 4px;
     transition: .5s;
+
 }
 
 #materials .cont-info a:hover i {
+
     margin-left: 15px;
+
 }
 
+#materials .imagenes img{
+    margin: 20px 0;
+    border-radius: 15px;
+}
+
+#materials  .imagen-2 img{
+    position: relative;
+    left: 49px;
+    bottom: -150px;
+}
+
+#materials  .imagen-2::before{
+    content: "";
+    width: 300px;
+    height: 390px;
+    background: #f7f7f7;
+    position: absolute;
+    z-index: -1;
+    bottom: 200px;
+    right: -135px;
+    border-radius: 20px;
+}
+
+#materials .cont-info{
+    padding: 60px;
+}
+
+#materials  .imagen-2 img{
+
+    box-shadow: 14px 14px 19px -10px #af7d43;
+
+}
+
+#materials  .imagenes img{
+
+box-shadow:  0px 13px 19px -10px #9f978e ;
+}
+
+#reviews{
+    width: 100%;
+    position: relative;
+    padding: 90px 0;
+    text-align: center;
+}
+
+#reviews h3 {
+    color: var(--primary-color);
+    font-size: var(--fs-title4);
+    text-transform: uppercase;
+    padding-top: 100px;
+    letter-spacing: 2px;
+}
+
+#reviews h2 {
+    font-weight: 700;
+    font-size: var(--fs-title2);
+    color: var(--dark-color);
+    margin-bottom: 65px;
+    padding-top: 25px;
+    text-decoration: capitalize;
+}
+
+#reviews .card-review{
+    position: relative;
+}
+
+#reviews .card-review .cont-info{
+    background: var(--white-color);
+    position: absolute;
+    width: 78%;
+    bottom: 20px;
+    border-radius: 30px;
+    left: 4%;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+#reviews .card-review .cont-info img{
+    position: absolute;
+    top: -35px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    border: 10px solid #fff;
+    border-radius: 50%;
+}
+
+#reviews .card-review .cont-info h4{
+    font-size: var(--fs-title4);
+    color: (--dark-color);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#reviews .card-review .cont-info h5{
+    font-size: 12px;
+    color: var(--dark-color);
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+#reviews .card-review .stars i{
+    color: #f6b76f;   
+}
+
+#reviews .card-review .stars i:nth-child(5){
+    opacity: 0.5;
+}
+
+#reviews .slick-arrow{
+    background: var(--white-color);
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    z-index: 999;
+    border-radius: 50%;
+    color: #0d1b39;
+    border: 1px solid #dbdada;
+}
+
+#reviews .slick-arrow::before{
+    color: #0d1b39;
+}
 
 
 /* 5. TABLET  RESPONSIVE*/
