@@ -397,9 +397,6 @@ header .bag-button .counter-products {
     margin-left: 15px;
 }
 
-/* SECCION  MATERIALS */
-
-
 #materials {
 
     width: 100%;
@@ -640,33 +637,32 @@ footer .terms .left {
 /* 5. TABLET  RESPONSIVE*/
 @media screen and (min-width:768px) and (max-width: 1080px) {
     #hero{
-        padding: 87px 90px;
-    }
-
-    #hero p{
-        padding: 40px 170px;
+    padding: 87px 90px;
     }
 
     header {
-        height: 105vh;
+    height: 105vh;
     }
 
+    #hero p{
+    padding: 40px 170px;
+    }
     #products {
-        padding: 80px 0;
+    padding: 80px 0;
     }
 
     #products #myTabContent {
-        padding: 10px 0;
+    padding: 10px 0;
     }
 
     #experiences{
-        padding: 210px 0;
+    padding: 210px 0;
     }
 
     #experiences .cont-img img{
-        width: 110%;
-        height: auto;
-        display: block;
+    width: 110%;
+    height: auto;
+    display: block;
     }
 
     #experiences .cont-img::after {
@@ -677,18 +673,18 @@ footer .terms .left {
     }
 
     #experiences .cont-info {
-        padding: 15px 40px 15px 60px;
+    padding: 15px 40px 15px 60px;   
     }
 
     #materials{
-        padding: 50px 0;
+    padding: 50px 0;
     }
 
     #materials .cont-info {
-        padding: 40px 20px 0 35px;
+    padding: 40px 20px 0 35px;
     }
     #materials .cont-info p {
-        width: 410px
+    width: 410px
     }
 
     #materials .imagen-2 img {
@@ -701,23 +697,330 @@ footer .terms .left {
     }
 
     #materials .imagenes{
-        width: 100%;  
-        height: auto;
+    width: 100%;  
+    height: auto;
     }
 
     #materials .imagen-2::before {
-        right: 25px;
+    right: 25px;
     }
 
     #reviews h3 {
-        padding-top: 10px;
+    padding-top: 10px;
     }
 
 }
 
 
 /* 6. SMARTPHONE RESPONSIVE*/
-@media screen and (min-width:320px) and (max-width: 767px) {}
+@media screen and (min-width:320px) and (max-width: 767px) {
+
+    header .bag-button {
+    display: none;}
+    
+
+   header {
+    height: auto;
+    padding: 20px;
+    background-position: center;
+    width: 140%;
+    }
+
+    header nav .logo {
+    font-size: 22px;
+    }
+
+    header button.shope {
+    display: none;  
+    }
+
+    header button span img {
+    transition: .4s;
+    width: 20px;
+    }
+
+
+    .navbar-toggler {
+    border: 0 transparent;
+    transition: .4s;
+    }
+
+    #navbarNav li a {
+    margin: 5px 0;
+    padding: 8px;
+    font-size: 14px;
+    display: block;
+    }
+
+    #hero {
+    padding: 60px 20px;
+    }
+
+    #hero h2 {
+    font-size: 24px;
+    }
+
+    #hero p {
+    font-size: 14px;
+    padding: 20px 10px;
+    }
+
+    #hero form {
+    width: 100%;
+    }
+
+    #hero form input {
+    width: 100%;
+    font-size: 14px;
+    }
+
+    #choosing-us {
+    padding: 60px 20px;
+    width: 140%;
+    }
+
+    #choosing-us h2 {
+    font-size: 28px;
+    }
+
+    #choosing-us h3 {
+    font-size: var(--fs-title4);
+    padding-top: 40px;
+    }
+
+    #choosing-us p {
+    font-size: 14px;
+    }
+
+    #products {
+    padding: 60px 20px;
+    width: 140%;
+
+    }
+
+    #products .slick-list {
+    padding: 130px 0;
+    }
+
+    #products h2 {
+    font-size: 28px;
+    }
+
+    #products ul {
+    width: 80%;
+    }
+
+    #products .card-product {
+     margin: 0 30px !important;
+    }
+
+    #products .slick-arrow {
+    margin: 0 30px 0 30px;
+    }
+
+    #products .slick-arrow {
+    padding-top: 5px;
+    }
+
+    #products li button {
+    padding: 8px 15px;
+    font-size: 14px;
+    }
+
+    #products .cont-img img {
+    width: 200px;
+    top: -50px;
+    }
+
+    #products .card-product h4 {
+    font-size: var(--fs-title3);
+    }
+
+    #experiences {
+    padding: 100px 20px;
+    width: 140%;
+    }
+
+    #experiences .cont-img {
+    left: -32px;
+    margin-bottom: 70px;
+    }
+
+    #experiences .cont-img img {
+    width: 100%;
+    }
+
+    #experiences .cont-img::before {
+    width: 260px;
+    height: 350px;
+    position: absolute;
+    top: -30px;
+    border-radius: 0 20px;
+    }
+
+    #experiences .cont-img::after {
+    width: 65px;
+    height: 350px;
+    left: 515px;
+    top: 45px;
+    }
+
+    #experiences .cont-info {
+    padding: 0;
+    }
+
+    #experiences .cont-info h2 {
+    font-size: 32px;
+    }
+
+    #experiences .cont-info h2,
+    #experiences .cont-info p {
+    width: 100%;
+    }
+
+    #materials {
+    padding: 60px 20px;
+    text-align: center;
+    }
+
+    #materials .cont-info {
+    padding: 0;
+    }
+
+    #materials .cont-info h3{
+    text-align: left;
+    }
+
+    #materials .cont-info h2 {
+    font-size: 32px;
+    text-align: left;
+    }
+
+    #materials .cont-info h2,
+    #materials .cont-info p {
+    width: 135%;
+    text-align: left;
+    }
+    
+     #materials .cont-info a {
+    display: block; 
+    text-align: left; 
+    }
+
+    #materials .imagen-2 img {
+    position: relative;
+    width: 80%;           
+    top: -465px;            
+    left: 215px;           
+    box-shadow: 14px 14px 19px -10px #af7d43; 
+    border-radius: 20px;   
+    }
+
+    #materials .imagenes{
+    width: 70%;  
+    height: auto;
+    }
+
+    #materials .imagen-2::before {
+    right: 30px;
+    bottom: 450px;
+    }
+
+    #reviews {
+    padding: 60px 20px;
+
+    width: 140%;
+    }
+
+    #reviews h3 {
+    padding-top: 10px;
+    }
+
+    #reviews h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+
+    #reviews .card-review .cont-info img{
+    top: -15px;
+    }
+
+    #reviews .card-review {
+    margin: 0 5px !important;
+    }
+
+    #reviews .card-review .cont-infos {
+    width: 100%; 
+    left: 0;      
+    padding: 20px 10px; 
+    }
+
+    #reviews .card-review .cont-info{
+    bottom: 15px;
+    }
+
+     #reviews .card-review .fondo {
+    width: 100%; 
+    }
+
+    #reviews .card-review {
+    margin: 0 5px !important; 
+    }
+
+    #reviews .card-review .cont-infos {
+    width: 100%; 
+    left: 0;      
+    padding: 20px 10px; 
+    }
+
+
+    footer {
+    width: 140%;
+    padding: 90px 0;
+    }
+
+    footer .logo {
+    color: var(--dark-color);
+    font-weight: 700;
+    font-size: 20px;
+    }
+
+    footer .contLogo, p{
+    margin-bottom: 20px;
+    text-align: center;
+    }
+
+    footer .row {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    footer .cont-footer {
+    flex: 1;
+    }
+
+    footer .cont-footer:nth-child(1) {
+    text-align: left;
+    }
+
+    footer .cont-footer:nth-child(2) {
+    text-align: center;
+    }
+
+    footer .cont-footer:nth-child(3) {
+    text-align: right;
+    }
+
+}
+
+
+    
+
+
+
+
 
 
 
