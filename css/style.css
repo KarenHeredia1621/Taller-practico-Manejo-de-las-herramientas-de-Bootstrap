@@ -757,11 +757,11 @@ footer .terms .left {
     }
 
     #hero h2 {
-    font-size: 24px;
+    font-size: 36px;
     }
 
     #hero p {
-    font-size: 14px;
+    font-size: 18px;
     padding: 20px 10px;
     }
 
@@ -790,6 +790,7 @@ footer .terms .left {
 
     #choosing-us p {
     font-size: 14px;
+    text-align: left;
     }
 
     #products {
