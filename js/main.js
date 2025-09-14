@@ -1,53 +1,50 @@
 $(document).ready(function () {
     $('.slider-products').slick({
-        slidesToShow: 4,   // muestras 4 columnas al mismo tiempo
-        slidesToScroll: 1, // avanzas de a 1
-        infinite: true,    // loop infinito
-        speed: 300,
-        arrows: true,      // flechas
-        dots: false,        // bolitas de navegación
+        slidesToShow: 2 , 
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        dots: false, 
         autoplay: true,
-        autoplaySpeed: 2000,
         responsive: [
             {
-                breakpoint: 992, // tablets y pantallas medianas
-                settings: {
-                    slidesToShow: 2
-                }
+                breakpoint: 1024,
+                settings: { slidesToShow: 2, slidesToScroll: 1 }
             },
             {
-                breakpoint: 576, // móviles
-                settings: {
-                    slidesToShow: 1
-                }
+                breakpoint: 600,
+                settings: { slidesToShow: 2, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 480,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
             }
         ]
     });
-
-    $('.slider-reviews').slick({
-    slidesToShow: 3,   // muestras 3 columnas al mismo tiempo
-    slidesToScroll: 1, // avanzas de a 1
-    infinite: true,    // loop infinito
-    speed: 300,
-    arrows: true,      // flechas
-    dots: false,        // bolitas de navegación
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-        {
-            breakpoint: 992, // tablets y pantallas medianas
-            settings: {
-                slidesToShow: 2
-            }
-        },
-        {
-            breakpoint: 576, // móviles
-            settings: {
-                slidesToShow: 1
-            }
-        }
-    ]
-    });
 });
 
+$(document).ready(function () {
+    $('.slider-reviews').slick({
+        slidesToShow: 2,  
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: true,
+        dots: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: { slidesToShow: 2, slidesToScroll: 2 }
+            },
+            {
+                breakpoint: 600,
+                settings: { slidesToShow: 2, slidesToScroll: 1 }
+            },
+            {
+                breakpoint: 480,
+                settings: { slidesToShow: 1, slidesToScroll: 1 }
+            }
+        ]
+    });
+});
 
